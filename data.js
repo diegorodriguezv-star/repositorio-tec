@@ -97,8 +97,8 @@ const SEED_RESOURCES = [
     format: "Code.org",
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
-    link: "https://code.org/",
-    image: "https://studio.code.org/us/es/courses/csp5-virtual/units/1?viewAs=Instructor",
+    link: "https://studio.code.org/us/es/courses/csp5-virtual/units/1?viewAs=Instructor",
+    image: "Reto Code.org",
     status: "publicado",
   },
   {
