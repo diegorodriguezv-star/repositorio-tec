@@ -3,15 +3,26 @@
 // la demo conserve los cambios entre recargas de página)
 // ============================================================
 const STORAGE_KEY = "red-tecnologia-resources";
+const VERSION_KEY = "red-tecnologia-resources-version";
 
 function loadResources() {
+  const storedVersion = localStorage.getItem(VERSION_KEY);
   const stored = localStorage.getItem(STORAGE_KEY);
-  if (stored) return JSON.parse(stored);
-  return JSON.parse(JSON.stringify(SEED_RESOURCES));
+
+  // Si nunca se ha guardado nada, o si SEED_VERSION cambió (es decir,
+  // editaste data.js), se descarta lo guardado y se parte de datos frescos.
+  if (stored && storedVersion === String(SEED_VERSION)) {
+    return JSON.parse(stored);
+  }
+  const fresh = JSON.parse(JSON.stringify(SEED_RESOURCES));
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(fresh));
+  localStorage.setItem(VERSION_KEY, String(SEED_VERSION));
+  return fresh;
 }
 
 function saveResources(list) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+  localStorage.setItem(VERSION_KEY, String(SEED_VERSION));
 }
 
 let resources = loadResources();
@@ -127,9 +138,12 @@ function renderHome() {
 }
 
 function resourceRowHTML(r) {
+  const thumb = r.image
+    ? `<img class="thumb" src="${r.image}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'resource-dot'}))" />`
+    : `<div class="resource-dot"></div>`;
   return `
     <div class="resource-row" data-goto-detail="${r.id}">
-      <div class="resource-dot"></div>
+      ${thumb}
       <div class="resource-text">
         <div class="title">${r.title}</div>
         <div class="meta">Grado ${r.grade} · ${r.type} · ${r.format}</div>
@@ -241,7 +255,13 @@ function renderDetail(id) {
       <h1>${r.title}</h1>
       <p class="subtitle">${r.description}</p>
 
-      <div class="preview-box">Vista previa embebida (${r.format})</div>
+      <div class="preview-box${r.image ? " has-image" : ""}">
+        ${
+          r.image
+            ? `<img src="${r.image}" alt="Vista previa de ${r.title}" onerror="this.parentElement.classList.remove('has-image'); this.replaceWith(document.createTextNode('Vista previa embebida (${r.format})'));" />`
+            : `Vista previa embebida (${r.format})`
+        }
+      </div>
 
       <div class="form-actions">
         <a class="btn btn-primary" href="${r.link}" target="_blank" rel="noopener">Abrir recurso original</a>
