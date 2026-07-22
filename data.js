@@ -1,6 +1,6 @@
 // Datos de ejemplo del repositorio (simulan lo que vendría de una base de datos real)
 // Cada recurso sigue los campos de Dublin Core que se documentan en el trabajo escrito.
-const SEED_VERSION = 8;
+const SEED_VERSION = 9;
 const COLLECTIONS = [
   { id: "electronica", name: "Electrónica básica", icon: "chip" },
   { id: "tinkercad", name: "Tinkercad circuitos", icon: "circuit" },
@@ -20,7 +20,7 @@ const SEED_RESOURCES = [
     format: "Tinkercad",
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
-    link: "https://www.tinkercad.com/things/cVJfRWcTtLe-un-pulsador-enciende-y-apaga-un-led/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=Alpq5uW7GTiKmOZ46V2mwJb1Pp-aOzx9Y6trdFO32jM",
+    link: "https://www.tinkercad.com/things/cVJfRWcTtLe-un-pulsador-enciende-y-apaga-un-led",
     // Ruta relativa a la carpeta "images/" dentro del repositorio.
     // Deja "" si todavía no tienes la imagen para este recurso.
     image: "images/tinkercad.png",
