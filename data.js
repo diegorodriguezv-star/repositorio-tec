@@ -20,7 +20,7 @@ const SEED_RESOURCES = [
     format: "Tinkercad",
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
-    link: "https://www.tinkercad.com/",
+    link: "https://www.tinkercad.com/things/cVJfRWcTtLe-un-pulsador-enciende-y-apaga-un-led/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=Alpq5uW7GTiKmOZ46V2mwJb1Pp-aOzx9Y6trdFO32jM",
     // Ruta relativa a la carpeta "images/" dentro del repositorio.
     // Deja "" si todavía no tienes la imagen para este recurso.
     image: "images/circuito-led.png",
