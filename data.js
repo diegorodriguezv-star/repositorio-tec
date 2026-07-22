@@ -20,7 +20,7 @@ const SEED_RESOURCES = [
     format: "Tinkercad",
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
-    link: "https://www.tinkercad.com/",
+    link: "https://www.tinkercad.com/things/cVJfRWcTtLe-un-pulsador-enciende-y-apaga-un-led/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=Alpq5uW7GTiKmOZ46V2mwJb1Pp-aOzx9Y6trdFO32jM",
     status: "publicado",
   },
   {
@@ -48,7 +48,7 @@ const SEED_RESOURCES = [
     format: "Tinkercad",
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
-    link: "https://www.tinkercad.com/",
+    link: "https://www.tinkercad.com/things/gVLIrrpcSG2-semaforo",
     status: "publicado",
   },
   {
@@ -62,7 +62,7 @@ const SEED_RESOURCES = [
     format: "Scratch",
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
-    link: "https://scratch.mit.edu/",
+    link: "https://scratch.mit.edu/projects/1069518024",
     status: "publicado",
   },
   {
@@ -76,7 +76,7 @@ const SEED_RESOURCES = [
     format: "Scratch",
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
-    link: "https://scratch.mit.edu/",
+    link: "https://scratch.mit.edu/projects/1363705128/",
     status: "publicado",
   },
   {
@@ -104,7 +104,7 @@ const SEED_RESOURCES = [
     format: "PDF",
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
-    link: "#",
+    link: "https://escuelaformativa.com/wp-content/uploads/2024/08/Tema-4-Sensores-y-Actuadores-en-Robotica.pdf",
     status: "publicado",
   },
 ];
