@@ -34,7 +34,7 @@ const SEED_RESOURCES = [
     format: "Tinkercad",
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
-    link: "https://www.tinkercad.com/",
+    link: "https://www.educaplus.org/game/ley-de-ohm",
     status: "publicado",
   },
   {
