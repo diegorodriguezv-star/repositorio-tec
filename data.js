@@ -76,7 +76,7 @@ const SEED_RESOURCES = [
     format: "Scratch",
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
-    link: "https://scratch.mit.edu/projects/1363705128",
+    link: "https://scratch.mit.edu/projects/1363708028",
     status: "publicado",
   },
   {
