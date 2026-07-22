@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Repositorio de Recursos Educativos Digitales · Tecnología</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Elemento de firma: pista de circuito que conecta el logo con el buscador -->
+  <svg class="trace-signature" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M 0 20 H 140 L 160 8 H 1040 L 1060 20 H 1200" />
+    <circle cx="140" cy="20" r="4" />
+    <circle cx="1060" cy="20" r="4" />
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#/home" class="logo" data-nav="home">
+        <span class="logo-pad"></span>
+        RED · Tecnología
+      </a>
+      <nav class="main-nav">
+        <a href="#/home" data-nav="home">Inicio</a>
+        <a href="#/results" data-nav="results" data-collection="">Colecciones</a>
+        <a href="#/upload" data-nav="upload">Subir recurso</a>
+        <a href="#/admin" data-nav="admin">Panel evaluador</a>
+      </nav>
+      <div class="role-switch">
+        <label for="role-select">Ver como</label>
+        <select id="role-select">
+          <option value="estudiante">Estudiante</option>
+          <option value="docente">Docente</option>
+          <option value="evaluador">Evaluador</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="site-footer">
+    <p>Repositorio institucional de Recursos Educativos Digitales · Área de Tecnología e Informática</p>
+    <p class="footer-note">Prototipo académico — Maestría en Recursos Digitales para la Educación, Universidad de Cartagena</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
