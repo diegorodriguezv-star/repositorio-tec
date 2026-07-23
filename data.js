@@ -53,7 +53,7 @@ const SEED_RESOURCES = [
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
     link: "https://www.tinkercad.com/things/bquaRtYXMWN/editel?sharecode=9kZdPPP9Pg7jIpEJPzSOQ2-EyECwMGtc6qH25m6tyeY",
-    image: "images/semaforo-arduino.png",
+    image: "images/tinkercad.png",
     status: "publicado",
   },
   {
