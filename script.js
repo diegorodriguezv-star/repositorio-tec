@@ -197,13 +197,23 @@ function renderResults(collectionFilter, searchQuery) {
             </div>
             <div class="filter-group">
               <h4>Grado</h4>
-              ${grades.map((g) => `<label><input type="radio" name="grade" value="${g}" /> ${g}</label>`).join("")}
-              <label><input type="radio" name="grade" value="" checked /> Todos</label>
+              ${grades
+                .map(
+                  (g) =>
+                    `<label><input type="radio" name="grade" value="${g}" ${state.grade === g ? "checked" : ""} /> ${g}</label>`
+                )
+                .join("")}
+              <label><input type="radio" name="grade" value="" ${state.grade === "" ? "checked" : ""} /> Todos</label>
             </div>
             <div class="filter-group">
               <h4>Tipo de recurso</h4>
-              ${types.map((t) => `<label><input type="radio" name="type" value="${t}" /> ${t}</label>`).join("")}
-              <label><input type="radio" name="type" value="" checked /> Todos</label>
+              ${types
+                .map(
+                  (t) =>
+                    `<label><input type="radio" name="type" value="${t}" ${state.type === t ? "checked" : ""} /> ${t}</label>`
+                )
+                .join("")}
+              <label><input type="radio" name="type" value="" ${state.type === "" ? "checked" : ""} /> Todos</label>
             </div>
           </aside>
           <div id="results-list">
