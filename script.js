@@ -138,12 +138,9 @@ function renderHome() {
 }
 
 function resourceRowHTML(r) {
-  const thumb = r.image
-    ? `<img class="thumb" src="${r.image}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'resource-dot'}))" />`
-    : `<div class="resource-dot"></div>`;
   return `
     <div class="resource-row" data-goto-detail="${r.id}">
-      ${thumb}
+      <div class="resource-dot"></div>
       <div class="resource-text">
         <div class="title">${r.title}</div>
         <div class="meta">Grado ${r.grade} · ${r.type} · ${r.format}</div>
