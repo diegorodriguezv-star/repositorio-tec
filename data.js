@@ -23,7 +23,7 @@ const SEED_RESOURCES = [
     link: "https://www.tinkercad.com/things/cVJfRWcTtLe-un-pulsador-enciende-y-apaga-un-led",
     // Ruta relativa a la carpeta "images/" dentro del repositorio.
     // Deja "" si todavía no tienes la imagen para este recurso.
-    image: "images/tinkercad.png",
+    image: "images/pulsador.PNG",
     status: "publicado",
   },
   {
@@ -38,7 +38,7 @@ const SEED_RESOURCES = [
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
     link: "https://www.educaplus.org/game/ley-de-ohm",
-    image: "images/ley-de-ohm.png",
+    image: "images/ohm.png",
     status: "publicado",
   },
   {
@@ -68,7 +68,7 @@ const SEED_RESOURCES = [
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
     link: "https://scratch.mit.edu/projects/1069518024",
-    image: "images/reto-laberinto.png",
+    image: "images/Scratch.PNG",
     status: "publicado",
   },
   {
@@ -83,7 +83,7 @@ const SEED_RESOURCES = [
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
     link: "https://scratch.mit.edu/projects/1363721356",
-    image: "images/historia-circuito.png",
+    image: "images/Scratch.PNG",
     status: "publicado",
   },
   {
@@ -98,7 +98,7 @@ const SEED_RESOURCES = [
     creator: "Diego Rodríguez",
     license: "CC BY-NC",
     link: "https://studio.code.org/us/es/courses/csp5-virtual/units/1?viewAs=Instructor",
-    image: "Reto Code.org",
+    image: "images/code.png",
     status: "publicado",
   },
   {
@@ -113,7 +113,7 @@ const SEED_RESOURCES = [
     creator: "Escuela Formativa",
     license: "CC BY-NC",
     link: "https://escuelaformativa.com/wp-content/uploads/2024/08/Tema-4-Sensores-y-Actuadores-en-Robotica.pdf",
-    image: "images/sensores-guia.png",
+    image: "images/sensor.PNG",
     status: "publicado",
   },
 ];
