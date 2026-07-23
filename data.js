@@ -23,7 +23,7 @@ const SEED_RESOURCES = [
     link: "https://www.tinkercad.com/things/cVJfRWcTtLe-un-pulsador-enciende-y-apaga-un-led",
     // Ruta relativa a la carpeta "images/" dentro del repositorio.
     // Deja "" si todavía no tienes la imagen para este recurso.
-    image: "",
+    image: "images/tinkercad.png",
     status: "publicado",
   },
   {
